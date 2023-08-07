@@ -23,5 +23,14 @@ if templates_length > 0:
         template_title = random_template["title"]
         template_blanks = random_template["blanks"]
     
-    print("Title: {}\nBlanks [{}]\nValue: {}".format(template_title, template_blanks, template_value))
+    list_blanks = template_blanks
+    blanks_input_list = []
+
+    for blank in list_blanks:
+        blank_input = input("{}: ".format(blank))
+
+        blanks_input_list.append(blank_input)
+
+    print(blanks_input_list)
+    # print("Title: {}\nBlanks [{}]\nValue: {}".format(template_title, template_blanks, template_value))
         
